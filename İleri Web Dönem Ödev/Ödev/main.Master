@@ -1,0 +1,99 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.master.cs" Inherits="Ödev.main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="still.css"/>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 103px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="kapsayan">
+            <div id="header">
+                <div  id="logo1">
+                    <img src="images/logo.png" />
+                </div>
+                <div id="yazi">
+                    <p>Web Programlama II Dersi</p>
+                    <p>Uygylama Ödevi</p>
+                </div>
+                <div id="logo2">
+                    <img src="images/pmyo_logo.png" />
+                </div>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="Soru1.aspx">Soru 1</a></li>
+                    <li><a href="Soru2.aspx">Soru 2</a></li>
+                    <li><a href="Soru2.aspx">Soru 3</a></li>
+                    <li><a href="Soru4.aspx">Soru 4</a></li>
+                    <li><a href="Soru5.aspx">Soru 5</a></li>
+                </ul>
+            </div>
+            <div id="sayfa">
+                <div id="icerik">
+                                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                </div>
+                <div id="sag">
+                    <div id="kullanici">
+                        <asp:Panel ID="Panel1" runat="server"><table class="auto-style1">
+                            <tr>
+                                <td class="auto-style2">Kullanıcı Adı:</td>
+                                <td>
+                                    <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style2">Parola:</td>
+                                <td>
+                                    <asp:TextBox ID="TextBox1" runat="server" TextMode="Password"></asp:TextBox>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style2">&nbsp;</td>
+                                <td>
+                                    <asp:Button ID="Button1" runat="server" Text="Giriş" CssClass="btn" OnClick="Button1_Click" />
+                                </td>
+                            </tr>
+                            </table>
+                            <br />
+                            <span>Hala Hesabını Yok Mu</span><br />
+                            <asp:LinkButton ID="LinkButton1" runat="server" CssClass="linkbtn" OnClick="LinkButton1_Click">Yeni Kullanıcı Hesabı Oluştur</asp:LinkButton>
+                        </asp:Panel>
+                        <asp:Panel ID="Panel2" runat="server">
+                            Hoşgeldin
+                            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label><br />
+                            <asp:Button ID="Button2" runat="server" Text="Çıkış" CssClass="btn" OnClick="Button2_Click" />
+                        </asp:Panel>
+                    </div>
+                    <br />
+                    <div id="kimler_cevrimici">
+                        Online Kullanıcı Sayısı: <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+                    </div>
+                    <div id="reklam">
+                        <asp:AdRotator ID="AdRotator1" runat="server" AdvertisementFile="~/Reklamlar.xml" />
+                    </div>
+                </div>
+                <div class="temizle"></div>
+            </div>
+            <div id="footer">
+                <p>&copy; 2023, 1226706039, Baran Alyar <span>Tüm Hakları Saklıdır.</span></p>
+            </div>
+            
+            
+        </div>
+    </form>
+</body>
+</html>

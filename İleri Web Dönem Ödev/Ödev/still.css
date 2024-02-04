@@ -1,0 +1,142 @@
+﻿body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.temizle {
+    clear: both;
+}
+
+#kapsayan {
+    height: auto;
+    min-height: 650px;
+}
+
+#header {
+    background-color: #0343aa;
+    height: 180px;
+    padding: 20px 100px;
+}
+
+#logo1 {
+    float: left;
+}
+
+#yazi {
+    float: left;
+    width: 70%;
+    text-align: center;
+    margin-top: 12px;
+    font-family: Arial;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+    #yazi p {
+        font-size: 28px;
+        text-transform: uppercase;
+    }
+
+    #yazi span {
+        font-size: 20px;
+        text-transform: capitalize;
+    }
+
+#logo2 {
+    float: right;
+}
+
+    #logo2 img {
+        width: 144px;
+        height: 143px;
+    }
+
+#menu {
+    background-color: #ffffff;
+    width: 85%;
+    border: 1px solid #777777;
+    box-shadow: 1px 3px 3px #777777;
+    margin: 0px auto;
+    overflow: auto;
+    margin-top: -40px;
+}
+
+    #menu ul {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+        #menu ul li {
+            float: left;
+            padding: 20px;
+        }
+
+    #menu a {
+        color: #777777;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+#sayfa {
+    width: 85%;
+    margin: 10px auto;
+    
+}
+
+#icerik {
+    float: left;
+    padding: 30px 20px 20px 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#sag {
+    width: 27%;
+    float: right;
+    font-size: 16px;
+}
+
+.btn {
+    background-color: #03388f;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    font-family: Arial;
+    border-radius: 14px;
+}
+
+.linkbtn {
+    color: #03388f;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Arial;
+}
+#sag table tr {
+    height: 30px;
+}
+#kimler_cevrimici {
+    margin-top: 15px;
+}
+#footer {
+    background-color: #0343aa;
+    padding: 10px 100px;
+    text-align: center;
+    color: #ffffff;
+}
+#reklam {
+    margin: 20px 20px 0px 0px;
+}
+.yazi2{
+    color:blue;
+    font-size:15px;
+    font-weight:bold;
+
+}
+.tyazi{
+    color:red;
+    font-size:15px;
+    font-weight:bold;
+}
+
